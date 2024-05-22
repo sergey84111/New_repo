@@ -8,7 +8,7 @@ if ! nc -z localhost $PORT; then
 fi
 
 # Проверяем существование файла index.html
-FILE="/var/www/html/index.html"
+FILE="/var/www/html/index.nginx-debian.html"
 if [ ! -f "$FILE" ]; then
   echo "Файл $FILE не существует"
   exit 2
